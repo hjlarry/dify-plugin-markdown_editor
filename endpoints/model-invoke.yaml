@@ -1,0 +1,5 @@
+path: "/model/invoke"
+method: "POST"
+extra:
+  python:
+    source: "endpoints/model-invoke.py"

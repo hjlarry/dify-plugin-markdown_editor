@@ -1,0 +1,25 @@
+settings:
+  - name: model
+    type: model-selector
+    scope: llm
+    required: true
+    label:
+      en_US: Model
+      zh_Hans: 模型
+      pt_BR: Modelo
+    placeholder:
+      en_US: Please select a model
+      zh_Hans: 请选择一个模型
+      pt_BR: Por favor, selecione um modelo
+  - name: operation
+    type: text-input
+    required: false
+    label:
+      en_US: Supported Operation
+      zh_Hans: 支持的操作
+    placeholder:
+      en_US: Please input json format
+      zh_Hans: 请输入json格式
+endpoints:
+  - endpoints/markdown-editor.yaml
+  - endpoints/model-invoke.yaml

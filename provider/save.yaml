@@ -1,0 +1,15 @@
+identity:
+  author: hjlarry
+  name: markdown-editor
+  label:
+    en_US: Save to Editor
+    zh_Hans: 保存至编辑器
+  description:
+    en_US: This tool is used to save the content to the markdown editor.
+    zh_Hans: 此工具用于将内容保存至编辑器。
+  icon: icon.svg
+tools:
+  - tools/save.yaml
+extra:
+  python:
+    source: provider/save.py

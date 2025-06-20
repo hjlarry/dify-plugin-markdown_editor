@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Markdown Editor</title>
+
+    <!-- External Libs -->
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" />
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.css" />
+    
+    <style>
+    /* style */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Markdown Editor</h1>
+        <div id="editor"></div>
+    </div>
+    
+    <div id="floating-menu">
+        /* operation_string */
+    </div>
+
+    <!-- LLM Result Modal -->
+    <div id="llm-modal-backdrop">
+        <div id="llm-modal">
+            <h2>AI Generated Content</h2>
+            <div id="llm-output" contenteditable="true"></div>
+            <div id="llm-loading">Loading...</div>
+            <div id="llm-actions">
+                <button id="llm-replace">Replace</button>
+                <button id="llm-regenerate">Regenerate</button>
+                <button id="llm-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Initial content passed from backend -->
+    <div id="initial-markdown" style="display: none;">/* initial_markdown_content */</div>
+
+    <!-- External Libs -->
+    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+    <script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight-all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+    /* script */
+    </script>
+</body>
+</html> 

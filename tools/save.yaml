@@ -1,0 +1,26 @@
+identity:
+  name: save
+  author: hjlarry
+  label:
+    en_US: Save for Edit
+    zh_Hans: 保存至编辑器
+description:
+  human:
+    en_US: This tool is used to save the content to the markdown editor.
+    zh_Hans: 此工具用于将内容保存至编辑器。
+  llm: This tool is used to save the content to the markdown editor.
+parameters:
+  - name: content
+    type: string
+    required: true
+    label:
+      en_US: Content
+      zh_Hans: 内容
+    human_description:
+      en_US: The content to save
+      zh_Hans: 要保存的内容
+    llm_description: The user query.
+    form: llm
+extra:
+  python:
+      source: tools/save.py

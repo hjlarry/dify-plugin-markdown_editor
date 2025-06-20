@@ -1,0 +1,139 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem 2rem 2rem 2rem;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 0; /* Remove old padding */
+    background-color: #f4f4f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    flex-shrink: 0; /* Prevent h1 from shrinking */
+    margin-bottom: 1rem;
+}
+
+#editor {
+    margin-top: 0; /* Remove old margin */
+    margin-bottom: 0; /* Remove old margin */
+    flex-grow: 1; /* Allow editor to fill space */
+    min-height: 0; /* Important for flex-grow in some browsers */
+}
+
+/* LLM Modal Styles */
+#llm-modal-backdrop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+#llm-modal {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#llm-modal h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#llm-output {
+    flex-grow: 1;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    white-space: pre-wrap; /* Preserve whitespace and wrap text */
+}
+
+#llm-loading {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+#llm-actions {
+    margin-top: 1.5rem;
+    text-align: right;
+}
+
+#llm-actions button {
+    margin-left: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#llm-actions #llm-replace {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+#llm-actions #llm-regenerate {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+#llm-actions #llm-cancel {
+    background-color: #f0f0f0;
+}
+
+#floating-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 5px;
+    z-index: 1000;
+}
+
+#floating-menu button {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+#floating-menu button:hover {
+    background-color: #f0f0f0;
+} 
