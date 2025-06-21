@@ -3,6 +3,7 @@
 **Author:** hjlarry  
 **Version:** 0.0.1  
 **Type:** extension  
+**Repo&Issue:**  [https://github.com/hjlarry/dify-plugin-markdown_editor](https://github.com/hjlarry/dify-plugin-markdown_editor)
 
 ### Description
 
